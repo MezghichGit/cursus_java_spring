@@ -1,0 +1,13 @@
+<h2 align="center">Liste des étudiants</h2>
+
+<table align="center" border="1">
+	<tr><th>Nom</th><th>Prénom</th><th>Age</th><th>Email</th></tr>
+	
+	<tr th:each="etudiant: ${etudiantsView}">
+		<td th:text="${etudiant.nom}"></td>
+		<td th:text="${etudiant.prenom}"></td>
+		<td th:text="${etudiant.age}"></td>
+		<td th:text="${etudiant.email}"></td>
+	</tr>
+	
+</table>

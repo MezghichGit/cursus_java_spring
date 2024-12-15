@@ -1,0 +1,11 @@
+<h1 align="center">About Me</h1>
+
+<p><b>Nom</b> : Mohamed Amine MEZGHICH</p>
+<p><b>Email</b> : amine.mezghich@gmail.com</p>
+
+<p>Le centre est <span th:text="${centerView}">hhhhhh</span></p>
+<hr/>
+<h4>Liste des stagiaires</h4>
+<ul>
+	<li th:each="stagiaire: ${stagiairesView}" th:text="${stagiaire}"></li>
+</ul>
