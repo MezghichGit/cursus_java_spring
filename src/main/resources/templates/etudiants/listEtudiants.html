@@ -1,0 +1,20 @@
+<div th:replace="fragments/header::header"></div>
+<h1>Liste des stagiaires</h1>
+
+<br/>
+Le nombre total des inscrits : <span th:text="${totalStudents}">un mot</span>
+
+<br>
+
+Le formateur est : <span th:text="${trainerStudents}">lorem is pum</span>
+<button type="button" class="btn btn-success">Cliquer ici</button>
+
+<div class="card" style="width: 18rem;">
+  <img th:src="@{/images/images.jpg}" class="card-img-top" alt="Logo SIP ACADEMY">
+  <div class="card-body">
+    <h5 class="card-title">Formation FullStack</h5>
+    <p class="card-text">Formation 100% pratique sur les frameworks Spring Boot Angular React Native.</p>
+    <a href="#" class="btn btn-primary">Détails</a>
+  </div>
+</div>
+<div th:replace="fragments/footer::footer"></div>
